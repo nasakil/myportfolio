@@ -24,6 +24,6 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: repoName ? `/${repoName}` : "" }
+  // Use empty string if deploying to root
+  { basename: "" }
 );
-
