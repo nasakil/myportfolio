@@ -23,7 +23,5 @@ export const router = createBrowserRouter(
         { path: "/portfolio/:id", element: <PortfolioDetail /> }
       ],
     },
-  ],
-  // Use empty string if deploying to root
-  { basename: "" }
+  ]
 );
