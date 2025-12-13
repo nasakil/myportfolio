@@ -1,6 +1,7 @@
-import person from "../../assets/images/person.jpg";
+import person from "../../assets/person.png";
 import "./introduction.css";
 import InformationSummary from "./InformationSummary";
+import { Link } from "react-scroll";
 
 // Information summary data
 const informationSummaryData = [
@@ -41,13 +42,11 @@ const Introduction = () => {
             Davao City, Philippines. I strive to build immersive and beautiful web
             applications through carefully crafted code and user-preffered designs.
           </p>
-          <p className="text-center lg:text-start">
-            <a
-              className="btn-primary btn btn-xs xxs:btn-lg text-white"
-              href="mailto:norman.asakil@hcdc.edu.ph"
-            >
+          <p className="text-center lg:text-start"> 
+            <Link className="btn-primary btn btn-xs xxs:btn-lg text-white"
+            to="contact" smooth={true} duration={900}>
               Reach out
-            </a>
+            </Link>
           </p>
         </div>
         <div className="mx-auto lg:mx-0 relative">

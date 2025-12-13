@@ -3,7 +3,7 @@ import Profile from "../components/profile/Profile";
 import WorkProcess from "../components/workProcess/WorkProcess";
 import Portfolio from "../components/portfolio/Portfolio";
 import WorkTogether from "../components/workTogether/WorkTogether";
-import Blog from "../components/blog/Blog";
+import Gallery from "../components/gallery/Gallery";
 import Profession from "../components/profession/Profession";
 import HappyClients from "../components/happyClients/HappyClients";
 import Testimonial from "../components/testimonial/Testimonial";
@@ -23,11 +23,11 @@ const Home = () => {
         <WorkProcess />
       </div>
       <Portfolio />
-      <div className="bg-[#546351]">
+      <div className="bg-[#1B3C53]">
         <WorkTogether />
       </div>
       <div className="blog-background">
-        <Blog />
+        <Gallery />
       </div>
       <div className="bg-soft-white">
         <Profession />

@@ -21,7 +21,7 @@ const WorkSteps = ({ data, style }) => {
           xmlns="http://www.w3.org/2000/svg"
           className="max-sm:p-2 sm:w-8 sm:h-8"
         >
-          <path d={data?.svgPath} fill={`${hover ? "#F1F3E0" : "#A1BC98"}`} />
+          <path d={data?.svgPath} fill={`${hover ? "#F1F3E0" : "#234C6A"}`} />
         </svg>
       </div>
       <div className="mt-3 xs:mt-4 sm:mt-8">

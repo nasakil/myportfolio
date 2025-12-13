@@ -1,64 +1,64 @@
+import card1 from "../../assets/images/portfolio-images/PLDT.jpg";
+import card2 from "../../assets/images/portfolio-images/JAIROSOFT2.jpg";
+import card3 from "../../assets/images/portfolio-images/CCAERC.jpg";
+import card4 from "../../assets/images/portfolio-images/CERTIFICATE.jpg";
+import card5 from "../../assets/images/portfolio-images/121EAST.png";
+import card6 from "../../assets/images/portfolio-images/WSCROSSCERT.jpg";
 import Projects from "./Projects";
-import card1 from "../../assets/images/portfolio-images/card-1.png";
-import card2 from "../../assets/images/portfolio-images/card-2.png";
-import card3 from "../../assets/images/portfolio-images/card-3.png";
-import card4 from "../../assets/images/portfolio-images/card-4.png";
-import card5 from "../../assets/images/portfolio-images/card-5.png";
-import card6 from "../../assets/images/portfolio-images/card-6.png";
 
-const projectData = [
+export const projectData = [
   {
     id: 1,
     image: card1,
-    category: "Frontend UI",
-    title: "Disbursement Project",
+    category: "Experience",
+    title: "PLDT and Vitro Inc. Tour",
     description:
-      "huhuhuu help",
+      "Participated in an immersive tour of PLDT and Vitro Inc. facilities, gaining insights into cutting-edge telecommunications technology and infrastructure.",
     link: "#!",
   },
   {
     id: 2,
     image: card2,
-    category: "Certificate",
-    title: "Certificate Of Completion",
+    category: "Experience",
+    title: "JAIROSOFT Company Tour",
     description:
-      "Do you want a house tour? I could take you to a first, second, third floor",
+      "Explored JAIROSOFT's innovative workspace and learned about their software development processes and company culture during an engaging tour.",
     link: "#!",
   },
   {
     id: 3,
     image: card3,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Experience",
+    title: "Davao City Central Communications and Emergency Response Center Tour",
     description:
-      "Developed a modern admin panel with a focus on usability and seamless navigation for end users and so on.",
+      "Visited the Davao City Central Communications and Emergency Response Center to understand their operations in managing emergency responses and public safety communications.",
     link: "#!",
   },
   {
     id: 4,
     image: card4,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Certificates",
+    title: "Certificate of Completion - Davao Educational Tour",
     description:
-      "Created a responsive dashboard layout that adapts smoothly across devices and screen sizes and so on.",
+      "Awarded for successfully completing the Davao Educational Tour, demonstrating active participation and engagement in learning about local industries and culture.",
     link: "#!",
   },
   {
     id: 5,
     image: card5,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "UI DESIGN",
+    title: "Disbursement Dashboard",
     description:
-      "Implemented interactive charts and widgets to visualize product data effectively for stakeholders.",
+      "Designed an intuitive disbursement dashboard that simplifies financial tracking and reporting for users, enhancing overall usability and efficiency.",
     link: "#!",
   },
   {
     id: 6,
     image: card6,
-    category: "UI-UX DESIGN",
-    title: "Product Admin Dashboard",
+    category: "Projects",
+    title: "CROSSCERT: Web-based Event Management and Certificate Automation Platform",
     description:
-      "Enhanced user experience by streamlining workflows and optimizing interface components and so on.",
+      "Developed a web-based platform that streamlines event management and automates certificate generation, improving user experience and operational efficiency.",
     link: "#!",
   },
 ];
@@ -78,19 +78,11 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="mx-auto flex justify-center">
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
+         <div className="grid xl:grid-cols-3 md:grid-cols-2 gap-6">
           {projectData.map((data, index) => (
             <Projects data={data} key={index} />
           ))}
         </div>
-      </div>
-      <div className="text-center">
-        <a
-          href="#!"
-          className="btn btn-primary py-3 px-6 mt-12.5 text-center text-[16px] font-semibold"
-        >
-          More Project
-        </a>
       </div>
     </div>
   );

@@ -1,6 +1,4 @@
 import {
-  faBehance,
-  faDribbble,
   faFacebookF,
   faInstagram,
   faLinkedin,
@@ -8,17 +6,17 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const socialIcons = [
-  { icon: faFacebookF, link: "#!" },
-  { icon: faDribbble, link: "#!" },
-  { icon: faInstagram, link: "#!" },
-  { icon: faLinkedin, link: "#!" },
-  { icon: faBehance, link: "#!" },
+  { icon: faFacebookF, link: "https://www.facebook.com/norman.asakil.og" },
+  { icon: faInstagram, link: "https://www.instagram.com/suchafunnyway_?igsh=ZmdnbmVraGhwcmZi" },
+  { icon: faLinkedin, link: "https://www.linkedin.com/in/norman-asakil-1884243a0/" },
 ];
 
 const SocialMedia = () => {
   return socialIcons.map((item, index) => (
     <a
       href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`text-picto-primary hover:bg-picto-primary p-2 pt-3 xs:p-2.5 xs:pt-3.75 sm:pt-4 md:pt-5 sm:p-3 md:p-3.75 hover:text-white rounded-md`}
       key={index}
     >

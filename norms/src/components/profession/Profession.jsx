@@ -1,4 +1,5 @@
 import Roles from "./Roles";
+import { Link } from "react-scroll";
 
 const rolesData = [
   {
@@ -41,12 +42,12 @@ const Profession = () => {
             users.
           </p>
         </div>
-        <a
-          href="#!"
+        <Link
+          to="contact" smooth={true} duration={500} offset={-150}
           className="mt-5 md:mt-12.5 btn btn-primary text-white w-fit md:py-3 md:px-6 text-[12px] sm:text-[16px] font-semibold max-md:mx-auto max-md:mb-5"
         >
-          Say Hello!
-        </a>
+          Reach Out
+        </Link>
       </div>
       <div className="">
         {rolesData.map((role, index) => (

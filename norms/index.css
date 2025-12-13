@@ -19,10 +19,10 @@
   --breakpoint-xxs: 21.25rem; /* COMMENT: 340px */
   --breakpoint-xs: 23.125rem; /* COMMENT: 363px */
   --breakpoint-xxl: 82.5rem; /* COMMENT: 1320px */
-  --color-picto-primary: #A1BC98;
-  --color-picto-primary-dark: #778873;
-  --color-soft-white: #F1F3E0;
-  --color-soft-dark: #879d90;
+  --color-picto-primary: #456882;
+  --color-picto-primary-dark: #234C6A;
+  --color-soft-white: #F2F2F2;
+  --color-soft-dark: #1B3C53;
 }
 
 .btn-primary {
@@ -47,15 +47,15 @@ body {
 .introduction-profile-background {
   background: radial-gradient(
       circle at 12% 100%,
-      #778873 1% 5px,
+      #456882 1% 5px,
       transparent 15%
     ),
     /* bottom left */
-      radial-gradient(circle at 95% -15%, #A1BC98 5%, transparent 30%),
+      radial-gradient(circle at 95% -15%, #234C6A 5%, transparent 30%),
     /* top right */
-      radial-gradient(circle at center right, #D2DCB6 2%, transparent 35%); /* center right */
+      radial-gradient(circle at center right, #456882 2%, transparent 35%); /* center right */
 }
 .blog-background {
-  background: radial-gradient(circle at -10% 0%, #A1BC98 1%, transparent 25%),
-    radial-gradient(circle at 110% 30%, #D2DCB6 5%, transparent 25%);
+  background: radial-gradient(circle at -10% 0%, #234C6A 1%, transparent 25%),
+    radial-gradient(circle at 110% 30%, #456882  5%, transparent 25%);
 }
