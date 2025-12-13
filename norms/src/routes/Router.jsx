@@ -19,13 +19,11 @@ export const router = createBrowserRouter(
         </Suspense>
       ),
       children: [
-        {
-          path: "/",
-          element: <Home></Home>,
-        },
+        { path: "/", element: <Home /> },
         { path: "/portfolio/:id", element: <PortfolioDetail /> }
       ],
     },
   ],
-  { basename: repoName? `/${repoName}` : "" }
+  { basename: repoName ? `/${repoName}` : "" }
 );
+
