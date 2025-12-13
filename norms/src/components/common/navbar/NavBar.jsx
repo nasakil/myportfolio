@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import logo from "../../../assets/logo.png";
+import logo from "../../../assets/plswork.png";
 
 const navItems = [
   { id: 1, name: "Home", url: "introduction" },
@@ -104,7 +104,7 @@ const NavBar = () => {
             onClick={() => handleScrollLink("introduction")}
             className="flex items-center border-0 lg:max-xxl:ps-5"
           >
-            <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
+            <img src={logo} className="h-7 sm:h-10 md:h-14 lg:h-18 rounded-full mr-5" alt="logo" />
             <p className="text-2xl sm:text-[32px] my-auto ms-[12px] font-semibold">
               Digital Norms
             </p>

@@ -34,15 +34,14 @@ const Profile = () => {
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            I am 3rd Year BSIT Student
+            I am a 3rd-year BSIT Student
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
-              I design and create projects for my subjects. Specializing creating
-              websites, prototypes and user interfaces. My
-              passion is to design and integrate digital user experiences.
+              I design and create projects for my subjects. 
+              Specializing in creating websites, prototypes, and user interfaces. My passion is to design and integrate digital user experiences.
             </p>
             <p className="mt-3">
               Check my projects or download my CV to check my background further.

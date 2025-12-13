@@ -10,24 +10,24 @@ import "./testimonial.css";
 const testimonialData = [
   {
     message:
-      "Working with this team was a fantastic experience. Their attention to detail and commitment to quality exceeded our expectations.",
-    quote: `From the initial consultation to the final delivery, every step was handled professionally. The end result was a product that not only met our needs but also impressed our stakeholders. Highly recommended!`,
-    name: "Esther Howard",
-    designation: "Managing Director, ABC Company",
+      "It was a great experience and had a wonderful time! Pleased of working with him.",
+    quote: `Opportunities awaits you on the horizon as long as you have the determination and consistency to reach it.`,
+    name: "Luis Palicte",
+    designation: "Holy Cross Of Davao College 3rd Year BSIT Student",
   },
   {
     message:
-      "Their expertise in UI/UX design helped us transform our digital presence and improve user engagement.",
-    quote: `The team demonstrated a deep understanding of our requirements and delivered a solution that was both visually appealing and highly functional. Communication was clear throughout the project.`,
-    name: "Ali Haider",
-    designation: "COO, XYZ Company",
+      "When it comes to brainstorming and collaborative work, I can always count on norman. he's ready anytime/anywhere whether it will success or fail. A keeper for certain.",
+    quote: `be zesty, be who you are`,
+    name: "Catherine Arnado",
+    designation: "Holy Cross Of Davao College 3rd Year BSIT Student",
   },
   {
     message:
-      "Professional, reliable, and creative—everything you want in a development partner.",
-    quote: `They delivered our project on time and went above and beyond to ensure our satisfaction. The new features have made a significant difference for our users. We look forward to working together again.`,
-    name: "Elon Max",
-    designation: "Managing Director, KFC Company",
+      "The tasks gets finished quickly when it comes to collaborative work.",
+    quote: `be who you are, for your pride~`,
+    name: "Joey Salazar",
+    designation: "Holy Cross Of Davao College 3rd Year BSIT Student",
   },
 ];
 

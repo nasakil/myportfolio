@@ -1,4 +1,4 @@
-import logo from "../../../assets/logo.png";
+import logo from "../../../assets/plswork.png";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const navItems = [
@@ -39,7 +39,7 @@ const Footer = () => {
           onClick={() => handleScrollLink("introduction")}
           className="flex items-center border-0"
         >
-          <img src={logo} className="h-8 sm:h-14 rounded-2xl" alt="logo" />
+          <img src={logo} className="h-8 sm:h-12 md:h-16 lg:h-20 rounded-full" alt="logo" />
           <p className="text-3xl sm:text-[32px] my-auto ms-[12px] font-semibold">
             Digital Norms
           </p>
