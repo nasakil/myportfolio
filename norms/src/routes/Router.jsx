@@ -27,5 +27,5 @@ export const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: `/${repoName}` }
+  { basename: repoName? `/${repoName}` : "" }
 );
