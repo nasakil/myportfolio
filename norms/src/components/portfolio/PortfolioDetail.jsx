@@ -18,7 +18,7 @@ const PortfolioDetail = () => {
     setTimeout(() => {
       const el = document.getElementById("portfolio");
       if (el) {
-        const top = el.getBoundingClientRect().top + window.scrollY - 80;
+        const top = el.getBoundingClientRect().top + window.scrollY - 95;
         window.scrollTo({ top, behavior: "smooth" });
       }
     }, 100);
