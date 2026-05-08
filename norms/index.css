@@ -30,6 +30,7 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
+  font-size: 16px;
 }
 
 .content {
@@ -37,7 +38,7 @@ body {
 }
 
 .section-title {
-  @apply md:font-semibold text-3xl sm:text-4xl md:text-5xl font-medium;
+  @apply md:font-semibold text-4xl sm:text-5xl md:text-6xl font-medium;
 }
 
 .center {
@@ -58,4 +59,13 @@ body {
 .blog-background {
   background: radial-gradient(circle at -10% 0%, #234C6A 1%, transparent 25%),
     radial-gradient(circle at 110% 30%, #456882  5%, transparent 25%);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

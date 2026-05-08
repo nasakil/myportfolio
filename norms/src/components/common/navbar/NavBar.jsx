@@ -3,13 +3,15 @@ import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../../../assets/plswork.png";
 
 const navItems = [
-  { id: 1, name: "Home", url: "introduction" },
-  { id: 2, name: "About", url: "profile" },
-  { id: 3, name: "Process", url: "work-process" },
-  { id: 4, name: "Portfolio", url: "portfolio" },
-  { id: 5, name: "Gallery", url: "gallery" },
-  { id: 6, name: "Services", url: "services" },
+  { id: 1, name: "Home",      url: "introduction" },
+  { id: 2, name: "About",     url: "profile" },
+  { id: 3, name: "Tech Stack",url: "tech-stack" },
+  { id: 4, name: "What I Do", url: "profession" },
+  { id: 5, name: "Portfolio", url: "portfolio" },
+  { id: 6, name: "Gallery",   url: "gallery" },
 ];
+
+const NAVBAR_HEIGHT = 90; // adjust this if your navbar is taller or shorter
 
 const NavBar = () => {
   const [position, setPosition] = useState(0);
@@ -20,7 +22,6 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setPosition(window.scrollY);
-      // update active section
       navItems.forEach((item) => {
         const el = document.getElementById(item.url.toLowerCase());
         if (el) {
@@ -30,23 +31,35 @@ const NavBar = () => {
           }
         }
       });
+
+      // clear active when reaching contact section
+      const contactEl = document.getElementById("contact");
+      if (contactEl) {
+        const top = contactEl.getBoundingClientRect().top;
+        if (top <= 150) {
+          setActive("");
+        }
+      }
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const scrollToSection = (url) => {
+    const el = document.getElementById(url.toLowerCase());
+    if (el) {
+      const top = el.getBoundingClientRect().top + window.scrollY - NAVBAR_HEIGHT;
+      window.scrollTo({ top, behavior: "smooth" });
+      setActive(url.toLowerCase());
+    }
+  };
+
   const handleScrollLink = (url) => {
     if (location.pathname !== "/") {
       navigate("/", { replace: false });
-      setTimeout(() => {
-        const el = document.getElementById(url.toLowerCase());
-        if (el) el.scrollIntoView({ behavior: "smooth", duration: 900 });
-        setActive(url.toLowerCase());
-      }, 50);
+      setTimeout(() => scrollToSection(url), 100);
     } else {
-      const el = document.getElementById(url.toLowerCase());
-      if (el) el.scrollIntoView({ behavior: "smooth", duration: 900 });
-      setActive(url.toLowerCase());
+      scrollToSection(url);
     }
   };
 
@@ -94,7 +107,7 @@ const NavBar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-lg dropdown-content rounded-box z-1 mt-3 w-lvw p-2 shadow font-semibold flex-nowrap bg-white text-black"
+              className="menu menu-lg dropdown-content rounded-box z-1 mt-3 w-42 p-2   shadow font-semibold flex-nowrap bg-white text-black"
             >
               {menu}
             </ul>

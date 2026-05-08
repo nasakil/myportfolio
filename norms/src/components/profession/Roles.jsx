@@ -23,7 +23,7 @@ const Roles = ({ role }) => {
         <p className="text-xl sm:text-2xl font-semibold text-gray-900 pb-4">
           {role?.title}
         </p>
-        <p className="text-[13px] sm:text-[16px] font-normal text-gray-700">
+        <p className="text-sm sm:text-[17px] font-normal text-gray-700">
           {role?.description}
         </p>
       </div>

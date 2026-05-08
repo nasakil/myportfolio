@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectFade, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 import TestimonialTemplate from "./TestimonialTemplate";
 import "./testimonial.css";
 
@@ -34,7 +34,7 @@ const testimonialData = [
 const Testimonial = () => {
   return (
     <div className="flex mx-auto justify-center px-2 max-w-218 pb-10 md:pb-25">
-      <div className="w-full h-full cursor-grab">
+      <div className="w-full h-full cursor-grab" data-aos="fade-up">
         <p className="section-title mb-6 text-center">Testimonial</p>
         <Swiper
           id="testimonialSwiper"
@@ -43,7 +43,13 @@ const Testimonial = () => {
           pagination={{
             clickable: true,
           }}
-          modules={[EffectFade, Navigation, Pagination]}
+          autoplay={{
+            delay: 10000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          speed={800}
+          modules={[Autoplay, EffectFade, Navigation, Pagination]}
         >
           {testimonialData.map((testimonial, index) => (
             <SwiperSlide key={index}>

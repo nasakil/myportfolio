@@ -6,9 +6,9 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const socialIcons = [
-  { icon: faFacebookF, link: "https://www.facebook.com/norman.asakil.og" },
-  { icon: faInstagram, link: "https://www.instagram.com/suchafunnyway_?igsh=ZmdnbmVraGhwcmZi" },
-  { icon: faLinkedin, link: "https://www.linkedin.com/in/norman-asakil-1884243a0/" },
+  { icon: faFacebookF, label: "Facebook", link: "https://www.facebook.com/norman.asakil.og" },
+  { icon: faInstagram, label: "Instagram", link: "https://www.instagram.com/suchafunnyway_?igsh=ZmdnbmVraGhwcmZi" },
+  { icon: faLinkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/norman-asakil-1884243a0/" },
 ];
 
 const SocialMedia = () => {

@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 const Profile = () => {
   return (
     <div
-      className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4`}
+      className={`relative mx-4 xxl:mx-0.5 -bottom-20 lg:-bottom-28 z-10 rounded-2xl bg-white drop-shadow-2xl max-xl:mb-5 shadow-white xl:p-28 lg:p-20 md:p-16 sm:p-10 p-4 animate-float`}
       id="profile"
     >
       <div className="flex max-md:flex-col justify-between items-center gap-6">
@@ -34,17 +34,17 @@ const Profile = () => {
           <h2
             className={`text-2xl xxs:text-3xl sm:text-4xl lg:text-[38px] text-[min(24px,38px)] max-md:text-center font-semibold mb-8`}
           >
-            I am a 3rd-year BSIT Student
+            Hey, I'm Norman — nice to meet you!
           </h2>
           <div
             className={`text-xs xs:text-[16px] lg:text-lg font-normal max-md:text-center text-gray-600`}
           >
             <p className={``}>
-              I design and create projects for my subjects. 
-              Specializing in creating websites, prototypes, and user interfaces. My passion is to design and integrate digital user experiences.
+              A frontend-focused developer 
+              who loves turning ideas into responsive, user-centered web applications with clean code and thoughtful design.
             </p>
             <p className="mt-3">
-              Check my projects or download my CV to check my background further.
+              Browse my projects or grab my CV to learn more about my background.
             </p>
           </div>
           <div className="mt-8 flex max-md:justify-center">

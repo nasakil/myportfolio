@@ -19,21 +19,23 @@ const Home = () => {
           <Profile />
         </div>
       </div>
+      <div className="pt-36 sm:pt-28">
+      <HappyClients />           {/* Tech Stack - right after hero */}
+      </div>
       <div className="bg-soft-white pt-30">
+        <Profession />           {/* What I Do */}
+      </div>
+      <div className="bg-soft-white">
         <WorkProcess />
       </div>
       <Portfolio />
+      <Testimonial />            {/* Right after Portfolio */}
       <div className="bg-[#1B3C53]">
         <WorkTogether />
       </div>
       <div className="blog-background">
         <Gallery />
       </div>
-      <div className="bg-soft-white">
-        <Profession />
-      </div>
-      <HappyClients />
-      <Testimonial />
       <Contact />
     </div>
   );
