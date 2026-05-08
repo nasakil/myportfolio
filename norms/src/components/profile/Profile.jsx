@@ -50,7 +50,7 @@ const Profile = () => {
           <div className="mt-8 flex max-md:justify-center">
             <Link
               className="btn xxs:btn-lg px-6 max-xs:px-2 xxs:py-3 btn-primary text-xs xxs:text-[14px] sm:text-[16px]"
-              to="portfolio" smooth={true} duration={500} offset={-150}
+              to="portfolio" smooth={true} duration={500} offset={-100}
             >
               My Portfolio
             </Link>

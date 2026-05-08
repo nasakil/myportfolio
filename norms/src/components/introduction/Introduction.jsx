@@ -118,6 +118,7 @@ const Introduction = () => {
           to="profile"
           smooth={true}
           duration={900}
+          offset={-80}
         >
           See my work
         </Link>
