@@ -102,9 +102,9 @@ const Introduction = () => {
     >
       <canvas ref={canvasRef} id="particles-canvas" />
       <div className="intro-content flex flex-col items-center">
-        <h1 className="text-5xl sm:text-6xl xl:text-8xl font-semibold leading-tight mb-4 max-w-4xl min-h-[1.2em]">
-          {displayed}
-          <span className={`${showCursor ? "opacity-100" : "opacity-0"} text-[#456882]`}>|</span>
+       <h1 className="text-5xl sm:text-6xl xl:text-8xl font-semibold leading-tight mb-4 max-w-4xl h-[1.2em] sm:h-[1.2em]">
+        {displayed}
+        <span className={`${showCursor ? "opacity-100" : "opacity-0"} text-[#456882]`}>|</span>
         </h1>
         <p className="text-sm sm:text-lg text-gray-500 max-w-xl mb-8">
           A personal portfolio by Norman Asakil — a 3rd Year{" "}
