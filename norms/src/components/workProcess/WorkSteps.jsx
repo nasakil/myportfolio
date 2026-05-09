@@ -11,9 +11,9 @@ const WorkSteps = ({ data, style }) => {
       onMouseOut={() => setHover(false)}
     >
       <div
-        className={`w-11 h-11 sm:w-18 sm:h-18 ${
-          hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
-        } text-center center rounded-md`}
+      className={`w-11 h-11 sm:w-18 sm:h-18 transition-colors duration-300 ${
+       hover ? "bg-picto-primary" : "bg-[#EDD8FF80]"
+      } text-center center rounded-md`}
       >
         <svg
           viewBox="0 0 32 32"

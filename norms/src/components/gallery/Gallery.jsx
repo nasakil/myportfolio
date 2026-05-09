@@ -88,9 +88,6 @@ const Gallery = () => {
               <h2 className="text-xl font-semibold mb-3">
                 {activeItem.title}
               </h2>
-              <p className="text-gray-700">
-                {activeItem.title}
-              </p>
             </div>
           </div>
         </div>

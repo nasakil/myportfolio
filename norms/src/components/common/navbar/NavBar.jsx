@@ -55,6 +55,7 @@ const NavBar = () => {
   };
 
   const handleScrollLink = (url) => {
+    document.activeElement?.blur();
     if (location.pathname !== "/") {
       navigate("/", { replace: false });
       setTimeout(() => scrollToSection(url), 100);
