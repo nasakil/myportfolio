@@ -48,6 +48,7 @@ const Gallery = () => {
       <div data-aos="fade-up" data-aos-delay="150">
         <Swiper
             grabCursor
+            loop={true}
             breakpoints={custom_breakpoints}
             pagination={{ clickable: true }}
             autoplay={{
