@@ -54,7 +54,7 @@ const Contact = () => {
               <SocialMedia />
             </div>
           </div>
-          <div className="w-full overflow-y-scroll py-6.5">
+          <div className="w-full overflow-y-auto py-6.5">
             <Form />
           </div>
         </div>

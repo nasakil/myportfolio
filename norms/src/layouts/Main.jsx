@@ -16,7 +16,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div data-theme={"light"} className="relative overflow-x-hidden">
+    <div data-theme={"light"} className="relative">
       <NavBar />
       <Outlet />
       <div className="bg-[#1B3C53]">
