@@ -4,6 +4,10 @@
   themes: light --default, dark --prefersdark, cupcake;
 }
 
+[data-aos] {
+  overflow-x: clip;
+}
+
 * {
   transition-property: all;
   transition-timing-function: var(
