@@ -9,7 +9,7 @@ const informationSummaryData = [
   { id: 3, title: "Key Skill", description: "Frontend" },
 ];
 
-const TYPED_WORDS = ["Digital Norms", "Frontend Dev", "N. Asakil"];
+const TYPED_WORDS = ["Digital Norms", "Frontend Dev", "Norman Asakil"];
 
 const Introduction = () => {
   const canvasRef = useRef(null);
