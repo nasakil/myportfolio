@@ -4,6 +4,10 @@
   themes: light --default, dark --prefersdark, cupcake;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 * {
   transition-property: all;
   transition-timing-function: var(
