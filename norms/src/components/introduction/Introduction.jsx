@@ -102,7 +102,7 @@ const Introduction = () => {
     >
       <canvas ref={canvasRef} id="particles-canvas" />
       <div className="intro-content flex flex-col items-center">
-       <h1 className="text-5xl sm:text-6xl xl:text-8xl font-semibold leading-tight mb-4 max-w-4xl h-[1.2em] sm:h-[1.2em]">
+       <h1 className="text-3xl xxs:text-4xl sm:text-6xl xl:text-8xl font-semibold leading-tight mb-4 max-w-4xl h-[1.5em] sm:h-[1.2em] whitespace-nowrap">
         {displayed}
         <span className={`${showCursor ? "opacity-100" : "opacity-0"} text-[#456882]`}>|</span>
         </h1>
