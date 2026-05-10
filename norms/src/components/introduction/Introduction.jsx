@@ -2,6 +2,7 @@ import InformationSummary from "./InformationSummary";
 import { Link } from "react-scroll";
 import { useEffect, useRef, useState } from "react";
 import "./introduction.css";
+import ThreeBackground from "./ThreeBackground";
 
 const informationSummaryData = [
   { id: 1, title: "Year Level", description: "3rd." },
@@ -22,26 +23,20 @@ const Introduction = () => {
   useEffect(() => {
     const currentWord = TYPED_WORDS[wordIndex];
     let timeout;
-
     if (!isDeleting && displayed.length < currentWord.length) {
-      // Typing
       timeout = setTimeout(() => {
         setDisplayed(currentWord.slice(0, displayed.length + 1));
       }, 100);
     } else if (!isDeleting && displayed.length === currentWord.length) {
-      // Pause at full word
       timeout = setTimeout(() => setIsDeleting(true), 2000);
     } else if (isDeleting && displayed.length > 0) {
-      // Deleting
       timeout = setTimeout(() => {
         setDisplayed(currentWord.slice(0, displayed.length - 1));
       }, 55);
     } else if (isDeleting && displayed.length === 0) {
-      // Move to next word
       setIsDeleting(false);
       setWordIndex((prev) => (prev + 1) % TYPED_WORDS.length);
     }
-
     return () => clearTimeout(timeout);
   }, [displayed, isDeleting, wordIndex]);
 
@@ -92,7 +87,7 @@ const Introduction = () => {
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", resize);
-    };
+    };  
   }, []);
 
   return (
@@ -100,12 +95,28 @@ const Introduction = () => {
       className="relative flex flex-col items-center justify-center text-center pt-20 pb-36 px-4"
       id="introduction"
     >
+      {/* 3D geometric shapes */}
+      <ThreeBackground />
+
+      {/* 2D particles on top */}
       <canvas ref={canvasRef} id="particles-canvas" />
+
       <div className="intro-content flex flex-col items-center">
-       <h1 className="text-3xl xxs:text-4xl sm:text-6xl xl:text-8xl font-semibold leading-tight mb-4 max-w-4xl h-[1.5em] sm:h-[1.2em] whitespace-nowrap">
-        {displayed}
-        <span className={`${showCursor ? "opacity-100" : "opacity-0"} text-[#456882]`}>|</span>
-        </h1>
+       <h1
+  className="text-3xl xxs:text-4xl sm:text-6xl xl:text-8xl font-semibold leading-tight mb-4 max-w-4xl h-[1.5em] sm:h-[1.2em] whitespace-nowrap"
+  style={{
+    color: "#456882",
+    WebkitTextStroke: "2px #ffffff",
+  }}
+>
+  {displayed}
+  <span
+    className={`${showCursor ? "opacity-100" : "opacity-0"}`}
+    style={{ color: "#456882", WebkitTextStroke: "0px" }}
+  >
+    |
+  </span>
+</h1>
         <p className="text-sm sm:text-lg text-gray-500 max-w-xl mb-8">
           A personal portfolio by Norman Asakil — a 3rd Year{" "}
           <span className="bg-highlight">BSIT Student</span> from{" "}

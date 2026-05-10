@@ -33,8 +33,12 @@
   @apply bg-picto-primary border-0 text-white hover:scale-[102%] hover:bg-picto-primary-dark transition-all duration-500;
 }
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Manrope", sans-serif;  /* body font */
   font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .section-title {
+  font-family: "Space Grotesk", sans-serif;  /* heading font */
 }
 
 .content {
